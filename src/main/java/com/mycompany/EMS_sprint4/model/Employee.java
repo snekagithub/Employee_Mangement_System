@@ -9,7 +9,7 @@ import javax.validation.constraints.NotBlank;
 @Setter
 @ToString
 @Entity
-@AllArgsConstructor
+//@AllArgsConstructor
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -36,13 +36,13 @@ public class Employee {
     public Employee() {
     }
 
-//    public Employee(String empName,String empContact,String empDepartment,String empEmail,String empAddress,String empRole)
-//    {
-//        this.empName=empName;
-//        this.empContact=empContact;
-//        this.empDepartment=empDepartment;
-//        this.empEmail=empEmail;
-//        this.empAddress=empAddress;
-//        this.empRole=empRole;
-//    }
+    public Employee(String empName,String empContact,String empDepartment,String empEmail,String empAddress,String empRole)
+    {
+        this.empName=empName;
+        this.empContact=empContact;
+        this.empDepartment=empDepartment;
+        this.empEmail=empEmail;
+        this.empAddress=empAddress;
+        this.empRole=empRole;
+    }
 }
